@@ -87,6 +87,12 @@ public class Ball extends Actor
             velY = -velY;
             removeTouching(Brick.class);
         }
+        if(getY()>=500)
+        {
+           World mundo = getWorld();
+           ((BreakoutWorld)mundo).DecrementarVida();
+           setLocation(BreakoutWorld.WIDTH/2,BreakoutWorld.HEIGHT/2);
+        }
     }
     
     /**
