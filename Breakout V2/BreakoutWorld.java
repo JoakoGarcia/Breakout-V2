@@ -135,12 +135,12 @@ public class BreakoutWorld extends World
     public void DecrementarVida()
     {
         contVidas.add(-1);
-        /*if(contVidas.getValue()==0)
+        if(contVidas.getValue()==0)
         {
             Label etiquetaFin = new Label("Game Over",55);
             addObject(etiquetaFin,200,200);
             Greenfoot.stop();
-        }*/
+        }
     }
   
     /*
