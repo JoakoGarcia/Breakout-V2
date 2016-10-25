@@ -70,6 +70,14 @@ public class Ball extends Actor
     public void act() 
     {
         setLocation(getX()+velX,getY()+velY);
+        if(getX()<=0 || getX()>=BreakoutWorld.WIDTH)
+        {
+            velX = -velX;
+        } 
+        if(getY()<=0)
+        {
+            velY = -velY;
+        } 
     }
     
     /**
