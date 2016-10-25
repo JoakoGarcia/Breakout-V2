@@ -68,7 +68,8 @@ public class Ball extends Actor
      * one of the edges of the world
      */
     public void act() 
-    {          
+    {
+        setLocation(getX()+velX,getY()+velY);
     }
     
     /**

@@ -1,12 +1,12 @@
 #Greenfoot properties
-#Mon Oct 24 19:20:46 CDT 2016
+#Mon Oct 24 19:30:26 CDT 2016
 class.Crab.superclass=
 editor.fx.0.height=700
 target2.width=80
 target5.naviview.expanded=false
 class.Space.superclass=
 target1.type=ClassTarget
-mainWindow.height=712
+mainWindow.height=717
 target2.editor.y=22
 target2.editor.x=184
 target1.height=50
@@ -38,7 +38,7 @@ class.Counter.superclass=greenfoot.Actor
 target4.typeParameters=
 target5.name=Brick
 world.lastInstantiated=BreakoutWorld
-mainWindow.width=666
+mainWindow.width=891
 readme.width=47
 class.Brick.superclass=greenfoot.Actor
 class.Rocket.superclass=
@@ -68,10 +68,10 @@ dependency1.from=Ball
 target5.editor.y=22
 class.Hamster.superclass=
 target5.editor.x=493
-mainWindow.y=22
+mainWindow.y=5
 editor.swing.0.y=0
 target5.showInterface=false
-mainWindow.x=290
+mainWindow.x=168
 editor.swing.0.x=0
 dependency5.from=BreakoutWorld
 target2.name=Paddle
