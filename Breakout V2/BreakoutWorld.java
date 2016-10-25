@@ -26,11 +26,11 @@ public class BreakoutWorld extends World
    /** the distance between bricks in pixels (cells) */
    public static final int BRICK_SEP = 4;   
    /** the number of bricks per row */
-   public static final int NUM_BRICKS_PER_ROW = 10; 
+   public static final int NUM_BRICKS_PER_ROW = 2; 
    /** distance from the top edge in pixels (cells) */
    public static final int BRICK_Y_OFFSET = 50;     
    /** the number of pixels per cell */
-   public static final int RESOLUTION = 1;          
+   public static final int RESOLUTION = 10;          
    /** world width in pixels (cells) */
    public static final int WIDTH = (BRICK_WIDTH + BRICK_SEP) * NUM_BRICKS_PER_ROW + BRICK_SEP; 
    /** world height in pixels (cells) */
@@ -137,8 +137,8 @@ public class BreakoutWorld extends World
         contVidas.add(-1);
         if(contVidas.getValue()==0)
         {
-            Label etiquetaFin = new Label("Game Over",55);
-            addObject(etiquetaFin,200,200);
+            Label etiquetaFin = new Label("Game Over",BreakoutWorld.WIDTH/4);
+            addObject(etiquetaFin,BreakoutWorld.WIDTH/2,BreakoutWorld.HEIGHT/2);
             Greenfoot.stop();
         }
     }

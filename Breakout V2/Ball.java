@@ -93,6 +93,19 @@ public class Ball extends Actor
            ((BreakoutWorld)mundo).DecrementarVida();
            setLocation(BreakoutWorld.WIDTH/2,BreakoutWorld.HEIGHT/2);
         }
+        checaBloques();
+    }
+    
+    public void checaBloques()
+    {
+        World mundo = getWorld();
+        List lista=mundo.getObjects(Brick.class);
+        if(lista.size()==0)
+        {
+            Label etiquetaFin = new Label("WINNER",BreakoutWorld.WIDTH/4);
+            mundo.addObject(etiquetaFin,BreakoutWorld.WIDTH/2,BreakoutWorld.HEIGHT/2);
+            Greenfoot.stop();
+        }
     }
     
     /**
