@@ -82,6 +82,11 @@ public class Ball extends Actor
         {
             velY = -velY;
         }
+        if(isTouching(Brick.class))
+        {
+            velY = -velY;
+            removeTouching(Brick.class);
+        }
     }
     
     /**
