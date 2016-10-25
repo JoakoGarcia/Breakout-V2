@@ -77,7 +77,11 @@ public class Ball extends Actor
         if(getY()<=0)
         {
             velY = -velY;
-        } 
+        }
+        if(isTouching(Paddle.class))
+        {
+            velY = -velY;
+        }
     }
     
     /**
